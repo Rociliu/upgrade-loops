@@ -8,3 +8,12 @@ const toys = [
     {id: 40, name: 'El gato con Guantes'},
     {id: 40, name: 'El gato felix'}
     ]
+    
+for (const toy of toys){
+    if (toy.name.includes("gato")){
+        const index = toys.indexOf(toy);
+        toys.splice(index, 1);
+    }
+}
+toys.pop();
+console.log(toys);
